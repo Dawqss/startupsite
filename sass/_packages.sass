@@ -1,0 +1,76 @@
+#packages
+	background-color: $color--greenlawn
+
+	.col-4, .col-m-4, .col-s-6
+		padding-left: 14px
+		padding-right: 14px
+
+	.col-4:first-of-type, .col-m-4:first-of-type, .col-s-6:first-of-type
+		padding-left: 28px
+		padding-right: 14px	
+
+	.col-4:last-of-type, .col-m-4:last-of-type, .col-s-6:last-of-type
+		padding-left: 14px
+		padding-right: 28px
+
+	.col-4:nth-of-type(2), .col-m-4:nth-of-type(2), col-s-6:nth-of-type(2)
+		.thumbnail
+			padding-top: 60px
+			margin-top: 0
+			height: $packages--divs--height
+
+		.btn
+			margin-top: $package--button--margin + 5px
+
+
+	.thumbnail
+		margin-bottom: 0
+		border-radius: 0
+		height: $packages--divs--height - 50px
+		background-color: $color--choco
+		border: none
+		margin-top: 50px
+		text-align: center
+
+		img
+			transform: scale(0.7)
+
+		h3
+			font-family: montserrat-black
+			text-transform: uppercase
+			color: #817f7f
+
+		h4
+			font-family: montserrat-black
+			text-transform: uppercase
+			font-size: 35px
+			letter-spacing: 6px
+			color: $color--info--paragraph
+			padding-bottom: 3%
+
+		h5
+			font-family: montserrat-black
+			margin-top: 15px
+			font-size: 45px
+		p
+			font-family: montserrat-regular
+			color: white
+			font-size: 16px
+			width: 75%
+			margin: 0 auto
+
+		.btn
+			margin-top: $package--button--margin
+			padding: 15px 50px
+			background-color: $color--greenlawn
+			border: none
+			transition: .4s linear
+			&:hover
+				background-color: $color--greenlawn--hover
+
+
+		a
+			font-size: $info--font--size
+
+	h2
+		padding-top: 5%

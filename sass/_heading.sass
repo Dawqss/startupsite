@@ -1,0 +1,116 @@
+.jumbotron
+	padding-top: 0
+	padding-bottom: 0
+	margin: 0
+	position: relative
+	z-index: 0
+	
+	img
+		width: 100%
+
+	.container
+		position: absolute
+		top: 30%
+		right: 0
+		left: 0
+		text-align: center
+
+		p
+			font-family: montserrat-light,
+			font-size: $info--font--size
+			line-height: $info--line--height
+			color: $color--info--paragraph
+			width: 50%
+			margin: 0 auto
+
+		p:last-of-type
+			margin-top: 1.5%
+			font-size: $info--font--size - 4px
+			margin-bottom: 3%
+		button
+			border-radius: 50%
+			margin-top: 20px
+			background-color: transparent
+			border: 3px solid $color--info--paragraph
+			transition: all .3s linear
+			&:hover
+				border-color: $color--greenlawn
+				margin-top: 16px
+			&:hover
+				img
+					padding: 14px
+					padding-left: 21px
+
+			img
+				padding: 8px
+				padding-left: 14px
+				transform: scale(0.7)
+				transition: all .3s linear
+
+.container-fluid
+	max-width: 1200px
+	margin: 0 auto
+
+.navbar-default
+	font-family: montserrat-regular
+	border: none
+	background-color: transparent
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	z-index: 1
+	margin: 0
+	padding: 0
+	padding-top: 20px
+
+	button
+		height: auto
+		line-height: $nav--height - 50px
+		height: 50px
+		margin-left: 40px
+		background-color: $color--greenlawn
+		border-radius: 8px
+		border: none
+		padding: 10px 20px
+		transition: .4s linear
+
+	.navbar-nav
+		display: flex
+		align-items: center
+		float: right
+		height: $nav--height
+
+		li
+			line-height: $nav--height
+			margin-left: 25px
+			margin-right: 3px
+			&:hover>a
+				border: solid 1px $color--greenlawn
+				color: $color--greenlawn
+				padding: 10px 14px
+				border-radius: 30px
+
+			a
+				color: white
+
+		li:last-of-type
+			&:hover
+				button, a		
+					background-color: $color--greenlawn--hover
+					text-decoration: none
+			a
+				transition: .4s linear		
+		
+
+
+	.navbar-brand
+		height: $nav--height
+		line-height: $nav--height
+
+
+	img
+		transform: scale(0.7)
+
+span
+	color: $color--greenlawn		

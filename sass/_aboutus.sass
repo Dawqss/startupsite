@@ -1,0 +1,72 @@
+#aboutus
+	h2
+		color: black
+		margin-top: 1.5%
+
+	p.info--paragraph
+		margin-bottom: 4%
+
+	img
+		text-align: center
+
+	.row
+		text-align: center
+
+
+	.col-xs-6, .col-m-4, .col-4
+		text-align: center
+
+
+		p:first-of-type
+			text-transform: uppercase
+			margin-top: 3%
+			font-family: montserrat-regular
+			color: $color--greenlawn
+			font-size: $info--font--size
+			font-weight: 900
+
+
+		p:last-of-type
+			@extend .info--paragraph
+			font-size: 14px
+			line-height: 150%
+			margin: 0 auto
+			width: 80%
+			margin-bottom: 6%
+
+	.col-12
+		text-align: center
+		font-family: montserrat-regular
+		margin-top: 2%
+		margin-bottom: 3%
+
+		button:first-of-type
+			background-color: $color--greenlawn
+			border: none
+			padding: 15px 30px
+			color: $color--info--paragraph
+			margin-right: 14px
+			transition: .4s linear
+			&:hover
+				background-color: $color--greenlawn--hover
+
+		button:last-of-type
+			background-color: transparent
+			border: 2px solid $color--greenlawn
+			margin-left: 14px
+			width: 227.39px
+			height: 50px
+			text-transform: uppercase
+			color: $color--greenlawn
+			font-weight: 700
+			transition: .4s linear
+			&:hover					
+				background-color: $color--greenlawn
+				color: $color--info--paragraph
+
+	.col-12:first-of-type
+		margin-top: 7%
+		margin-bottom: 1%
+
+	.row:last-of-type
+		margin-bottom: 4%
